@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 public class CustomAuthService {
     @Autowired
     PermissionReporitory permissionReporitory;
+
     public Boolean canAccess(HttpServletRequest request, Authentication authentication){
         //动态鉴权逻辑
         //1.先判断当前的用户有没有认证过
