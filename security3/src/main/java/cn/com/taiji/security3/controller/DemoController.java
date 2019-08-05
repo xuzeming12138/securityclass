@@ -29,4 +29,16 @@ public class DemoController {
     public String user(){
         return "user";
     }
+
+    @GetMapping("/a")
+    @ResponseBody
+    public String a(){
+        return "a";
+    }
+
+    @GetMapping("/b")
+    @ResponseBody
+    public String b(){
+        return "b";
+    }
 }

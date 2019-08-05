@@ -37,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                                         .antMatchers("/error").permitAll()
                                         .antMatchers("/user").hasAnyRole("ADMIN","USER")
                                         .antMatchers("/admin").hasRole("ADMIN")
-
+                                        .anyRequest().access("@CustomAuthService.cancanAccess(request,authentication)")
                                         .anyRequest()
 //                        )
                                 .authenticated()

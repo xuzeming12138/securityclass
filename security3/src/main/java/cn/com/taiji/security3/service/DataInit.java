@@ -1,10 +1,6 @@
-/*
-package cn.com.taiji.security2.service;
+package cn.com.taiji.security3.service;
 
-import Role;
-import RoleRepository;
-import UserInfo;
-import UserInfoRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -13,9 +9,9 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+//@Service
 public class DataInit {
-    @Autowired
+    /*@Autowired
     private UserInfoRepository userInfoRepository;
     @Autowired
     private RoleRepository roleRepository;
@@ -47,5 +43,5 @@ public class DataInit {
         user.setRoles(roles);
         userInfoRepository.save(user);
 
-    }
-}*/
+    }*/
+}
